@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Ajuste para que a imagem ocupe a tela inteira */
+.page img {
+    width: 100%;   /* A imagem agora ocupará 100% da largura */
+    height: 100%;  /* A altura também será 100%, ocupando toda a tela */
+    object-fit: cover; /* A imagem cobrirá toda a área da tela, sem distorção */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-heart, .btn-broken-heart {
+    position: absolute;
+    bottom: 15%; /* Espaço adequado para garantir que os botões fiquem visíveis */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.btn-heart {
+    background-color: red;
+    left: 30%;
+    transition: all 0.3s ease;
+}
+
+.btn-broken-heart {
+    background-color: darkred;
+    left: 55%;
+    transition: all 0.3s ease;
+}
